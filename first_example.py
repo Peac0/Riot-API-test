@@ -18,7 +18,7 @@ match_detail = watcher.match.by_id(my_region, last_match)['info']
 participants = []
 for row in match_detail['participants']:
     participants_row = {}
-    participants_row['champion'] = row['championId']
+    participants_row['champion'] = row['championName']
     participants_row['spell1'] = row['spell1Casts']
     participants_row['spell2'] = row['spell2Casts']
     participants_row['win'] = row['win']
